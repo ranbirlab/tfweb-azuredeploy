@@ -1,0 +1,30 @@
+{
+   "deployment" :{
+      "capability":"tax",
+      "app_name":"sequence",
+      "environment":"dev",
+      "cost_code":"0001",
+      "deployment_type":"web",
+      "web_tier" : {
+         "count":4,
+         "recommended_instance_type":"Standard_B1s",
+         "disk_size":"256",
+         "image_type":"marketplace_image",
+         "kpmg_goldenimage":{
+            "image_name":"MyPrivateGallery/MyImage",
+            "imageuri":"https://management.azure.com/subscriptions/SUBSCRIPTION_ID/resourceGroups/RESOURCE_GROUP_NAME/providers/Microsoft.Compute/galleries/MyPrivateGallery/images/MyImage/versions/1.0.0"
+         },
+         "marketplace_image": {
+            "publisher":"Canonical",
+            "offer":"UbuntuServer",
+            "sku":"16.04-LTS",
+            "version":"latest"
+         }
+      }
+   }
+}
+
+   
+   
+   
+   
